@@ -1,0 +1,240 @@
+a.top{
+  position: fixed;
+  bottom: 50px;
+  right: -50px;
+  z-index: 2000;
+  transition: all 500ms ease;
+}
+.showTop{
+  transform: translateX(-100px);
+  transition: all 500ms ease;
+}
+nav.nav-desktop{
+  background-color: rgba(42, 42, 42, 0.88);
+  position: absolute;
+  /* position: fixed; */
+  height: 80px;
+  width: 100%;
+  font-size: 1.3em;
+  display: flex;
+  align-items: center;
+}
+nav.nav-desktop .logo{
+  margin-left: 50px;
+  animation-name: logo-color;
+  animation-duration: 20s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+}
+nav.nav-desktop ul{
+  margin-left: 30px;
+}
+nav.nav-desktop li a{
+  color: #fff;
+}
+.menu-desktop{
+  background-color: rgba(42, 42, 42, 0.88) !important;
+}
+nav.nav-desktop li>a:hover,:focus{
+  background-color: rgba(255, 255, 255, 0) !important;
+}
+@keyframes logo-color {
+  10%{filter: hue-rotate(36deg);}
+  20%{filter: hue-rotate(72deg);}
+  30%{filter: hue-rotate(108deg);}
+  40%{filter: hue-rotate(144deg);}
+  50%{filter: hue-rotate(180deg);}
+  60%{filter: hue-rotate(216deg);}
+  70%{filter: hue-rotate(252deg);}
+  80%{filter: hue-rotate(288deg);}
+  90%{filter: hue-rotate(324deg);}
+  100%{filter: hue-rotate(360deg);}
+}
+/*---menu icon---*/
+.ham {
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  transition: transform 400ms;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.hamRotate.active {
+  transform: rotate(45deg);
+}
+.hamRotate180.active {
+  transform: rotate(180deg);
+}
+.line {
+  fill:none;
+  transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+  stroke:#000;
+  stroke-width:5.5;
+  stroke-linecap:round;
+}
+.ham8 .top {
+  stroke-dasharray: 40 160;
+}
+.ham8 .middle {
+  stroke-dasharray: 40 142;
+  transform-origin: 50%;
+  transition: transform 400ms;
+}
+.ham8 .bottom {
+  stroke-dasharray: 40 85;
+  transform-origin: 50%;
+  transition: transform 400ms, stroke-dashoffset 400ms;
+}
+.ham8.active .top {
+  stroke-dashoffset: -64px;
+}
+.ham8.active .middle {
+  //stroke-dashoffset: -20px;
+  transform: rotate(90deg);
+}
+.ham8.active .bottom {
+  stroke-dashoffset: -64px;
+}
+/*fin-menu icon---*/
+.nav-mobile li{
+  list-style: none;
+  padding-top: 20px;
+}
+.menu-mobile1{
+  position: absolute;
+  left: 60px !important;
+  top: -20px !important;
+  background-color: rgba(42, 42, 42, 0.88) !important;
+}
+.menu-mobile2{
+  position: absolute;
+  left: 75px !important;
+  top: -20px !important;
+  background-color: rgba(42, 42, 42, 0.88) !important;
+}
+.menu-mobile3{
+  position: absolute;
+  left: 105px !important;
+  top: -20px !important;
+  background-color: rgba(42, 42, 42, 0.88) !important;
+}
+div.menu-hamburger{
+  background-color: rgba(42, 42, 42, 0.88);
+  width: 200px;
+  height: 300px;
+  position: absolute;
+  left: -200px;
+  top: 0px;
+  z-index: 1;
+  padding-top: 60px;
+  border-bottom-right-radius: 5px;
+}
+.nav-mobile ul{
+  border-top: 1px solid #000;
+}
+span.icon-menu{
+  z-index: 100;
+  position: absolute;
+}
+nav.nav-mobile a{
+  color: #fff;
+  text-decoration: none;
+}
+.open-menu-hamburger{
+  transform: translateX(200px);
+  transition: all 500ms ease;
+}
+.close-menu-hamburger{
+  transform: translateX(0px);
+  transition: all 500ms ease;
+}
+.nav-mobile{
+  display: none;
+}
+.h-tit1{
+  margin-top: 100px;
+  margin-bottom: 60px;
+}
+.d-one,.d-two{
+  /* border: 1px solid #000; */
+  padding: 0 !important;
+}
+div.parent-4img:hover img{
+  transform: scale(1.2);
+  transition: all 400ms ease;
+  z-index: 1;
+}
+div.parent-4img{
+  overflow: hidden;
+  border: 3px solid gray;
+  border-radius: 3px;
+  padding: 0;
+  cursor: pointer;
+}
+div.parent-4img img{
+  transition: all 400ms ease;
+}
+span.mask-4img{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+div.parent-4img:hover .mask-4img{
+  background-color: rgba(41, 41, 41, 0.53);
+}
+div.sec1{
+  margin-top: 400px;
+  text-align: center;
+  border-bottom: 1px solid #000;
+}
+h3.rainbow6,h3.ps4,h3.gtx{
+  margin-top: 150px;
+  font-weight: bold;
+}
+h3.battlefield-4,h3.fortnite,h3.pubg,h3.xbox,h3.nintendo,h3.msi,h3.ram{
+  margin-top: 150px;
+  font-weight: bold;
+}
+div.sec2,div.sec3{
+  margin-top: 200px;
+  text-align: center;
+  border-bottom: 1px solid #000;
+}
+img.ps4-img{
+  margin-top: 70px;
+}
+div.comment{
+  background-image: linear-gradient(#fff,#ccc8c8,#d6d6d6);
+  padding:50px;
+  margin-top: 150px;
+}
+div.comment input[type=submit]{
+  width: 140px;
+}
+div.comment .form-control:focus{
+  background-color: #fff !important;
+}
+div.mask2{
+  height: 100px;
+  width: 100%;
+  background-image: linear-gradient(#d6d6d6,#fff);
+}
+footer{
+  text-align: center;
+  color: #fff;
+  background-color: rgb(34, 34, 34);
+  height: 200px;
+  font-size: 1.3em;
+  margin-top: 200px;
+}
+@media only screen and (max-width:768px) {
+  nav.nav-desktop{
+    display: none;
+  }
+  nav.nav-mobile{
+    display:block;
+  }
+}
