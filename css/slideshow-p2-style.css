@@ -1,0 +1,18 @@
+body{
+  background-color: rgb(79, 79, 79);
+}
+.slide-opacity img{
+  display: none;
+}
+.slide-opacity .current{
+  display: block;
+  animation: slide-opc 2s ease;
+}
+
+@keyframes slide-opc {
+  0%{opacity: 0}
+  25%{opacity: 1}
+  50%{opacity: 1}
+  75%{opacity: 1}
+  100%{opacity: 0}
+}

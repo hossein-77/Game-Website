@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Game website</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/share.css">
+    <link rel="stylesheet" href="css/fonts/font-awesome-4.3.0/css/font-awesome.min.css">
   </head>
   <body>
     <a href="#" class="top"><img src="image/top-page.png" width="50px"></a>
@@ -49,7 +51,7 @@
         </li>
 
         <li class="nav-item">
-          <a href="#" class="nav-link">Gallery</a>
+          <a href="gallery/gallery.html" class="nav-link">Gallery</a>
         </li>
 
       </ul>
@@ -104,16 +106,20 @@
           </li>
 
           <li>
-            <a href="#">Gallery</a>
+            <a href="gallery/gallery.html">Gallery</a>
           </li>
 
         </ul>
       </div>
     </nav>
+    <div class="search-container">
+      <input type="search" class="search">
+      <button type="submit"><span class="line-icon">| </span> <span class="glyphicon glyphicon-search"></span></button>
+    </div>
     <!--main--------------------------------------------------->
     <header>
       <div class="div-img-header">
-        <img src="image/header-img.jpg" class="card-img-top">
+        <img src="image/header-img.jpg" width="100%">
       </div>
     </header>
 
@@ -217,7 +223,7 @@
           <div class="my-5">
             <h3 class="text-primary xbox">XBOX ONE</h3>
             <p class="lead text-justify my-5">
-              Xbox One is a line of eighth generation home video game consoles developed by Microsoft. Announced in May 2013, it is the successor to Xbox 360 and the third console in the Xbox family. It was first released in North America, parts of Europe, Australia, and South America in November 2013, and in Japan, China, and other European countries in September 2014. It is the first Xbox game console to be released in China, specifically in the Shanghai Free-Trade Zone. Microsoft marketed the device as an "all-in-one entertainment system".[12] The Xbox One line mainly competes against consoles such as Sony's PlayStation 4 and Nintendo's Wii U and Switch.
+              Xbox One is a line of eighth generation home video game consoles developed by Microsoft. Announced in May 2013, it is the successor to Xbox 360 and the third console in the Xbox family. It was first released in North America, parts of Europe, Australia, and South America in November 2013, and in Japan, China, and other European countries in September 2014. It is the first Xbox game console to be released in China, specifically in the Shanghai Free-Trade Zone. Microsoft marketed the device as an "all-in-one entertainment system".The Xbox One line mainly competes against consoles such as Sony's PlayStation 4 and Nintendo's Wii U and Switch.
               <br>
               <br>
               Moving away from its predecessor's PowerPC-based architecture, Xbox One marks a shift back to the x86 architecture used in the original Xbox; it features an AMD Accelerated Processing Unit (APU) built around the x86-64 instruction set. Xbox One's controller was redesigned over the Xbox 360's, with a redesigned body, D-pad and triggers capable of delivering directional haptic feedback. The console places an increased emphasis on cloud computing, as well as social networking features, and the ability to record and share video clips or screenshots from gameplay, or live-stream directly to streaming services such as Mixer and Twitch. Games can also be played off-console via a local area network on supported Windows 10 devices. The console can play Blu-ray Disc, and overlay live television programming from an existing set-top box or a digital tuner for digital terrestrial television with an enhanced program guide. The console optionally included a redesigned Kinect sensor, marketed as the "Kinect 2.0", providing improved motion tracking and voice recognition.
@@ -308,17 +314,52 @@
       </div>
     </main>
     <div class="mask2"></div>
-    <footer  dir="rtl" class="d-flex justify-content-center align-items-center">
+    <footer  dir="rtl" class="pt-5">
       <div>
         <p>این وب سایت با استفاده از jQuery , CSS3 , HTML5 ایجاد شده و با استفاده از Bootstrap ریسپانسیو شده است</p>
         <p>این وب سایت توسط <span class="text-danger">حسین شایق </span>طراحی و ساخته شده است</p>
         <p>همچنین می توانید بقیه کارهای حسین شایق را درون <a href="https://github.com/hossein-77">گیت هاب</a> مشاهده کنید</p>
       </div>
+
+      <div>
+        <div class="content">
+    				<div class="share">
+    					<button class="share-toggle-button">
+    						<i class="share-icon fa fa-share-alt"></i>
+    					</button>
+    					<ul class="share-items">
+    						<li class="share-item">
+    							<a href="#" class="share-button">
+    								<i class="share-icon fa fa-facebook"></i>
+    							</a>
+    						</li>
+    						<li class="share-item">
+    							<a href="#" class="share-button">
+    								<i class="share-icon fa fa-twitter"></i>
+    							</a>
+    						</li>
+    						<li class="share-item">
+    							<a href="#" class="share-button">
+    								<i class="share-icon fa fa-pinterest"></i>
+    							</a>
+    						</li>
+    						<li class="share-item">
+    							<a href="#" class="share-button">
+    								<i class="share-icon fa fa-tumblr"></i>
+    							</a>
+    						</li>
+    					</ul>
+    				</div>
+    			</div>
+      </div>
+
     </footer>
   <!--Javascript source code--------------------------------------------------------->
     <script src="js/jquery.min.js"></script>
     <script src="js/jqcode.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/share.js"></script>
+    <script src="js/TweenMax.min.js"></script>
   </body>
 </html>

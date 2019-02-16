@@ -69,5 +69,4 @@ $(document).ready(function(){
       $('.text-comment').css('background-color','#fff');
     }
   });
-
 });
