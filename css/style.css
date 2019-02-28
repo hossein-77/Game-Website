@@ -266,6 +266,13 @@ button.share-toggle-button:focus {
 .line-icon{
   font-size: 1.5em;
 }
+.gallery-tab{
+  animation: change-color 2s ease;
+  animation-iteration-count: infinite;
+}
+@keyframes change-color {
+  50%{color: red;}
+}
 @media only screen and (max-width:991px) {
   nav.nav-desktop{
     display: none;

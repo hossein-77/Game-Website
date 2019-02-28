@@ -69,4 +69,16 @@ $(document).ready(function(){
       $('.text-comment').css('background-color','#fff');
     }
   });
+  $('#rslides-pubg').responsiveSlides({
+    auto:true,
+    speed:800
+  });
+  $('#slide-battlefield').responsiveSlides({
+    auto:true,
+    speed:1000,
+    pager:true
+  })
+  $('.go-btn').click(function(){
+    $('html,body').animate({scrollTop:$('#slide-battlefield').offset().top},1000);
+  });
 });
